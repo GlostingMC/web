@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Online</title>
+    <link rel="icon" type="image/x-icon" href="img/game1.jpg">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <!-- Menú de hamburguesa -->
+    <div class="menu-toggle" id="menuToggle">
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+        <span class="menu-icon"></span>
+        <span class="menu-label">Menú</span>
+    </div>
+    <nav class="menu-nav" id="menuNav">
+        <ul class="menu-list">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#games">Juegos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="intro">
+            <h2>Juegos online 2024</h2>
+            <p>Descubre y explora nuestros juegos destacados.</p>
+        </section>
+        <section id="games" class="game-list">
+            <div class="game-item">
+                <a href="https://www.fortnite.com/?lang=es-ES" target="_blank">
+                    <img src="img/game1.jpg" alt="Fortnite">
+                </a>
+                <h3>Fortnite</h3>
+                <p>¿Qué es Fortnite: Battle Royale? Este juego permite hasta a 100 personas participar juntas en una partida. Los jugadores se dejan caer en el mapa del juego y deben competir para ser el último en quedar de pie matando a todos los demás jugadores en el juego.</p>
+            </div>
+            <div class="game-item">
+                <a href="https://ffsoporte.garena.com/hc/es-419" target="_blank">
+                    <img src="img/game3.jpeg" alt="Free Fire">
+                </a>
+                <h3>Free Fire</h3>
+                <p>Free Fire es un juego de disparos y supervivencia mundialmente famoso que está disponible para dispositivos móviles. Cada partida de 10 minutos te coloca en una isla remota en donde te enfrentas contra otros 49 jugadores, todos con un mismo objetivo: sobrevivir.</p>
+            </div>
+            <div class="game-item">
+                <a href="#">
+                    <img src="img/game4.jpg" alt="Apex Legend">
+                </a>
+                <h3>Apex Legend</h3>
+                <p>Los pioneros, exploradores y forajidos que las habitan solían pasar su vida enzarzados en una eterna lucha de poder, pero ahora resuelven sus diferencias en los Juegos Apex, un cruento deporte donde leyendas de todos los confines de la Frontera se enfrentan por lograr dinero, fama y gloria.</p>
+            </div>
+            <div class="game-item">
+                <a href="#">
+                    <img src="img/game5.png" alt="Spell Break">
+                </a>
+                <h3>Spell Break</h3>
+                <p>Spellbreak trata de un mapa en el cual 42 personas se enfrentan a la vez para ser el o los últimos sobrevivientes. A diferencia de otros juegos del género de battle royale, el enfrentamiento se realiza mediante magia y hechizos en lugar de armas de guerra.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <p>Para cualquier consulta, por favor, contáctanos.</p>
+            <a href="mailto:info@ghost.com">Enviar un correo</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Cristian.Sa</p>
+    </footer>
+
+    <!-- Script para el menú -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menuNav = document.getElementById('menuNav');
+
+        menuToggle.addEventListener('click', () => {
+            menuNav.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

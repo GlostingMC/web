@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Comentarios</title>
+    <link rel="stylesheet" href="comentario.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="menu.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <h1>Comentarios</h1>
+    </header>
+
+    <main>
+        <section class="comment-form">
+            <h2>Deja tu comentario</h2>
+            <form action="/submit-comment" method="post">
+                <label for="username">Nombre:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section class="comments-list">
+            <h2>Comentarios</h2>
+            <div class="comment">
+                <p class="username">Juan Pérez</p>
+                <p>¡Este juego es increíble! No puedo esperar para el próximo lanzamiento.</p>
+            </div>
+            <div class="comment">
+                <p class="username">Ana Gómez</p>
+                <p>Eh.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
